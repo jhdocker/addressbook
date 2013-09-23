@@ -1,0 +1,25 @@
+$def with (header, person, footer)
+$:header
+	$for record in person:
+		<p class = "entry">$record.first_name $record.last_name<br/> $record.email<br/> $record.phone<br/> $record.city</p>
+		
+		<form id="contact-form" method = "post" action = "/detail/$record.id">			
+			<fieldset>
+			<p style='text-align:left'>Update Contact</p>
+			First Name: <input class="formfield" type="text" name='first_name' value = "$record.first_name" required/><br/>
+			Last name: <input class="formfield" type = "text" name="last_name" value = "$record.last_name" required/><br/>
+			Email: <input class="formfield" type="text" name="email" value = "$record.email"/><br/>
+			Phone: <input class="formfield" type="integer" name="phone" value = "$record.phone"/><br/>
+			City: <input class="formfield" type="text" name="city" value = "$record.city" required/><br/>
+			<input type="submit" class='button' name = 'update' value="Update">
+			</fieldset>		
+		</form>
+		<form id = "delete-form" method='post' action = "/edit/$record.id">
+			<fieldset>
+			<p style='text-align:left'>Delete Contact</p>
+			Delete This Contact:<input class = 'formfield' type='text' name='name' value= "$record.first_name $record.last_name">
+			
+			<input type="submit" class = 'button' name="delete" value="Delete">
+			</fieldset>
+		</form>	
+$:footer

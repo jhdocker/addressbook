@@ -1,0 +1,22 @@
+$def with (header, entries, footer)
+$:header
+		
+	<form id="contact-form" method = "post" action = "add">
+		<fieldset>
+		<p style='text-align:left'>Add Contact</p>
+		First Name: <input class="formfield" type="text" name="first_name" required/><br/>
+		Last name: <input class="formfield" type = "text" name="last_name" required/><br/>
+		Email: <input class="formfield" type="text" name="email" /><br/>
+		Phone: <input class="formfield" type="integer" name="phone" /><br/>
+		City: <input class="formfield" type="text" name="city" required/><br/>
+		<input type="submit" class='button' name = 'button' value="Add" >
+		</fieldset>		
+	</form>
+	
+
+	<ul class = "entry">
+		$for contacts in entries:
+			<li><a href="/detail/$contacts.id">$contacts.first_name, $contacts.last_name</a></li>
+	</ul>
+	
+$:footer

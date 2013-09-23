@@ -1,0 +1,19 @@
+$def with (header, results, footer)
+$:header
+	
+		<form id = 'contact-form'>
+			<fieldset>
+			<p>
+			Search:<input class = 'formfield' name="first_name" type="text" required>
+			<input class = 'button' type="submit" value="search">
+			</p>
+			</fieldset>
+		</form>
+	</div>
+	<ul class = "entry">
+	$for result in results:
+		<li><a href="/detail/$result.id">$result.first_name, $result.last_name</a></li>
+	</ul>
+
+
+$:footer

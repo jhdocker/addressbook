@@ -1,0 +1,144 @@
+#header-space {
+	background-color:#383838;
+	height:7%;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	box-shadow: .5em .5em .5em;
+}
+
+#header-links li{
+	display:inline-block;
+	padding:15px 30px 0px 30px;
+	margin:0px;
+	text-align: center;
+}
+
+#header-links a:link {
+	color:#8E8E8E;
+	text-decoration: none;
+}
+
+#header-links a:visited {
+	color:#8E8E8E;
+}
+
+#header-links li a:hover {
+	font-color:orange;
+}
+
+body{
+	background-color:#8E8E8E;
+	width:100%;
+	padding-left:0px;
+	margin:0px;
+}
+
+#contact-form {
+	position:absolute;
+	top:100px;
+	left:25px;
+}
+
+#contact-form input.button{
+	border:none;
+	border-radius: 0.6em;
+	box-shadow: .1em .1em .1em;
+}
+#contact-form input.button:hover{
+	background-color: #383838;
+	color:#8E8E8E;
+	border:none;
+	border-radius: 0.6em;
+	box-shadow: .1em .1em .1em;
+}
+
+#contact-form fieldset {
+	background-color:#8E8E8E;
+	color:#383838;
+	text-align: right;
+	font-size: 1.1em;
+	border-radius:1.1em;
+	box-shadow: .3em .3em .3em;
+}
+#contact-form input.formfield{
+	background-color: #8E8E8E;
+	border-bottom: dotted thin black;
+	border-top: none;
+	border-left:none;
+	border-right:none;
+}
+
+#search-form fieldset{
+	background-color:#8E8E8E;
+	color:#383838;
+	text-align: right;
+	font-size: 1.1em;
+	border-radius:1.1em;
+	box-shadow: .3em .3em .3em;
+}
+
+#delete-form fieldset{
+	border-radius: 1.1em;
+	margin:100px 900px 20px 25px;
+	box-shadow: .3em .3em .3em;
+	color:#383838;
+}
+#delete-form input.formfield{
+	background-color: #8E8E8E;
+	border-bottom: dotted thin black;
+	border-top: none;
+	border-left:none;
+	border-right:none;
+}
+#delete-form input.button{
+	border:none;
+	border-radius: 0.6em;
+	box-shadow: .1em .1em .1em;
+}
+#delete-form input.button:hover{
+	background-color: #383838;
+	color:#8E8E8E;
+	border:none;
+	border-radius: 0.6em;
+	box-shadow: .1em .1em .1em;
+}
+
+ul.contact-list {
+	color:black;
+	font-size: 1.2em;
+	padding:20px;
+}
+
+.entry {
+	color:#383838;
+	margin:50px 300px 50px 300px;
+	border:solid #383838;
+	border-radius: 15px;
+	padding:25px;
+	background-color:white;
+	box-shadow: .3em .3em .3em;
+}
+
+.entry a{
+	color:#383838;
+}
+
+.entry a:visited {
+	color:#383838;
+}
+
+a.del-button {
+	border:dotted thin #383838;
+	border-radius: .5em;
+	box-shadow: .3em .3em .3em;
+	color:#383838;
+	margin-left:45%;
+	padding:5px;
+	background-color:#8E8E8E;
+}
+
+#footer p {
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
